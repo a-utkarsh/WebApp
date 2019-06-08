@@ -1,20 +1,8 @@
-$("#signup").submit(function(event){
-	alert("hi")
-	console.log("hi")
-	event.preventDefault();
-});
-
-function checkForm(e){
-	e.preventDefault();
-	$.post("/",function(data,status){
-		console.log(data,status)
-		if (status=== "200"){
-			alert("Post Success");
-			window.location("http://127.0.0.1:8081/success");
-		}
-		else{
-			alert("post error")
-		}
-	});
-	return false;
+function checkForm(form){
+	var returnvar=true;
+	if (message.length>0){
+		alert("Email already exists")
+		return returnvar=false;
+	}
+	return returnvar;
 }
