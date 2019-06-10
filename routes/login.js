@@ -1,6 +1,5 @@
 var express = require('express');
 var router  = express.Router();
-
 exports.login= function(req,res){
 	var session = req.session;
 	if(req.method=="POST"){
@@ -21,7 +20,6 @@ exports.login= function(req,res){
 					res.render('login.html',{message:message1})
 					console.log(message1)
 				}
-
 			});
 		}
 		else{
@@ -29,7 +27,6 @@ exports.login= function(req,res){
 			res.render('login.html',{message:message2});
 			console.log(message2)
 		//	res.send('Please enter your email and password');
-
 		}
 	}
 	else{

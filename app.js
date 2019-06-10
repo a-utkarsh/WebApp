@@ -11,7 +11,9 @@ var signup			 = require('./routes/signup')
 var login			 = require('./routes/login')
 var login_success	 = require('./routes/login_success');
 var success          = require('./routes/success')
+var home 			 = require('./routes/home.js')
 var session          = require('express-session');
+var favicon			 = require('express-favicon')
 var connection       = mysql.createConnection({
 	host			 : "localhost",
 	user			 : "admin",
@@ -28,8 +30,7 @@ app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
-
-
+app.use(favicon(path.join(__dirname , 'public')));
 app.use(session({
                 secret: 'keyboard cat',
                 resave: false,
@@ -38,12 +39,14 @@ app.use(session({
              }))
 
 /* Development only */
+app.get('/',home.home);
 app.get('/signup', signup.signup);
 app.post('/signup',signup.signup);
 app.get('/success',success.success)
 app.get('/login', login.login);
 app.post('/login',login.login);
 app.get('/login_success', login_success.dashboard);//call for dashboard page after login
+app.get('/logout',login_success.logout);
 
 /* Creating Server */
 var server   = app.listen(8081,function(){
