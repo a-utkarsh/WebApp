@@ -1,10 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title> SignUp Form </title>
-		<link  rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" src="../public/stylesheets/style.css" href="/stylesheets/style.css">
+
+		<link rel="stylesheet" href="/stylesheets/bootstrap.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/stylesheets/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN -->
-		<script href="/javascripts/test.js"></script>
+		<script src="/javascripts/test.js"></script>
 		<link rel="shortcut icon" href="/images/favicon.ico">
 
 		<meta charset="UTF-8"> 
@@ -15,42 +18,67 @@
 		<br>
 		<div class= "main-header">
 			<h1 style=color:#e2daec>Register to Antares Tech</h1>
-			<div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-						</div>
-						<div class= "col-md-6 main">
-							<form class="form" id="signup" method="POST" action="/signup" onSubmit="return checkform(this);">
-								<h1 style=color:#a18eb9> Signup Form </h1>
+		</div>
+		<div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+					</div>
+					<div class= "col-md-6 main">
+						<form class="form" id="signup" method="POST" action="/signup">
+							<h1 style=color:#fff> Signup Form </h1>
+							<div class="name">
 								<input class="box" type="text" name="name" id="name" placeholder="Enter your name" required/><br>
+								<i class="fa fa-user icon"></i> 
+							</div>
+							<div>
+
 								<input class="box" type="email" name="email" id="email" placeholder="Enter your E-Mail" required/><br>
+								<i class="fa fa-envelope icon"> </i> 
+							</div>
+							<div>	
 								<input class="box" type="password" name="password" id="password" placeholder="Enter your password" required/><br>
+								<i class="fa fa-key icon"> </i> 
+							</div>
+							<div>
 								<input class="box" type="text" name="phone" id="phone" placeholder="Enter your Mobile Number" required/><br>
-								<input class="box2" type="date" name="bday" id="bday" placeholder="Enter your DOB" required/><br>
-								<select class="sel" name="gender" placeholder="Select Gender" required>
-									<option value="" disabled selected>Select Gender</option>
-									<option value="male">Male</option>
-									<option value="female">Female</option>
-								</select>
-								<br>
-								<p class="profile"> Upload Photo:</p>
-								<input class="fileupload" type="file" name="pic" id="pic" accept="image/*"/><br>
-								<input type="submit" id= "submitDetails" name="submitDetails" value= " Submit" /><br>
-							</form>
-							<p style="font-size:20px;color:a18eb9">Aready have an account?<a href="login"> Login here</a></p>
-						</div>
-						<div class= "col-md-3">
-						</div>
-					</div>  
-				</div>
-				<li></li>
-				<li></li>
-				<li></li>
-				<div class="copy">
-					<p>© Utkarsh Anand | Antares Tech | All rights reserved | Design by <a href="https://sites.google.com/view/utkarsh-anand" target="_blank">Utkarsh Anand</a> for learning purpose only.</p>
-				</div>
-				<!-- //copyright -->
+								<i class="fa fa-mobile-phone"></i>
+							</div>
+
+							<div class="date">
+
+								<input class="box" type="date" name="bday" id="bday" required/><br>
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+
+
+							</div>
+							<select class="sel" name="gender" required>
+								<option value="" disabled selected>Select Gender</option>
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+							<br>
+							<p class="profile"> &nbsp;&nbsp;&nbsp;Upload Photo
+							<i class="fa fa-upload" aria-hidden="true"></i>
+
+							</p>
+							<input class="fileupload" type="file" name="pic" id="pic" accept="image/*"/><br>
+							<input type="submit" id= "submitDetails" name="submitDetails" value= " Submit" /><br>
+						</form>
+						<p style="font-size:20px;color:#a18eb9">Aready have an account?<a href="login"> Login here</a></p>
+					</div>
+					<div class= "col-md-3">
+					</div>
+				</div>  
 			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="copy">
+				<p>© Utkarsh Anand | Antares Tech | All rights reserved | Design by <a href="https://sites.google.com/view/utkarsh-anand" target="_blank">Utkarsh Anand</a> for learning purpose only.</p>
+			</div>
+			<!-- //copyright -->
+		</div>
 	</body>
 </html>

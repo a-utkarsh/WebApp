@@ -12,24 +12,28 @@ exports.login= function(req,res){
 					req.session.userId = results[0].id;
 					req.session.user   = results[0];
 					console.log(results[0].id);
-					res.redirect('/login_success')
+					res.redirect('/login_success');
 				}
 				else{
 				//	res.send('<script>alert("Email or password incorrect")</script>');
 					message1= "Email or Password incorrect";
-					res.render('login.html',{message:message1})
-					console.log(message1)
+					//	res.status(400)
+					res.render("login.html",{error:message1});
+
+					//res.send(new Error ('email or password incorrect'));
+					console.log(message1);
 				}
 			});
 		}
 		else{
 			message2= "Please enter your email and password";
-			res.render('login.html',{message:message2});
-			console.log(message2)
+			res.render('login.html',{error:message2});
+			console.log(message2);
 		//	res.send('Please enter your email and password');
 		}
 	}
 	else{
-		res.render('login.html')
+		//var message1=null
+		res.render('login.html');//, {error:message1});
 	}
 };

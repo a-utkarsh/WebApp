@@ -75,6 +75,55 @@
 	opacity: 1;
 	right: 0;
 }
+#pic{
+	text-align: left;
+}
+.fa-user{
+	cursor: none;
+	margin-top: -60px;
+	font-size: 37px;
+	margin-left: 20px;
+	color:#a19eb9;
+	position: absolute;
+}
+#fa\ fa-envelope\ icon{
+	font-size: 30px;
+	margin-top:-60px;
+	margin-left: 20px;
+	color:#a18eb9;
+}
+#fa\ fa-key\ icon{
+	font-size: 30px;
+	margin-top:-60px;
+	margin-left: 20px;
+	color:#a18eb9;
+}
+.fa-envelope{
+	font-size: 30px;
+	margin-top:-60px;
+	margin-left: 20px;
+	color:#a18eb9;
+	position: absolute;
+}
+.fa-key{
+	font-size: 30px;
+	margin-top:-60px;
+	margin-left: 20px;
+	color:#a18eb9;
+	position: absolute;
+}
+.fa-mobile-phone{
+	font-size: 48px;
+	margin-top:-69px;
+	margin-left: 22px;
+	color:#a18eb9;
+	position: absolute;
+}
+input[type=date]{
+	margin-top:0;	
+}
+
+
 #logout{
 	width: 170px;
 	height: 55px;
@@ -160,6 +209,7 @@ input{
 	border: none;
 	height: 65px;
 	border-bottom: 2px solid #a18eb9;
+	text-align:center;
 }
 .box2::placeholder{
 	color:black
@@ -167,54 +217,69 @@ input{
 input[class=box2]{
 	font-family: 'Josefin Slab', serif;
 	font-size:30px;
-	width:50%;
-	padding:12px 20px;
+	width:100%;
+	padding:12px 13px;
 	margin:8px 0;
 	border:none;
-	color:#000;
-	height: 65px;
-	border-bottom: 2px solid #a18eb9
+	color:black;
+	background:white;
+	cursor:pointer;
+	height: 63px;
+	margin-left: 1px;
+	margin-top:1px;
 }
-input[class=box2]::placeholder{
-	color:red;
+.fa-calendar{
+	font-size: 30px;
+	margin-top:-59px;
+	margin-left: 230px;
+	color:#a18eb9;
+	position: absolute;
+}
+.date:hover{
+	pointer-events: none;
+}
+input[type=date]:hover{
+	margin: 0px;
 }
 select[class=sel]{
 	font-family: 'Josefin Slab', serif;
 	font-size:30px;
-	width:44%;
+	width:41%;
 	color:#000;
 	height: 65px;
 	padding:12px 20px;
-	margin:8px 0;
 	border:none;
 	border-bottom: 2px solid #a18eb9;
-	position: absolute;
-	left: 304px;
-	top: 429;
+	position:absolute;
+	margin-top:-65px;
+	margin-left:294px;
 	background-color: white;
+
+}
+
+.date{
+	background: white;
+	width: 270px;
+	height:65px;
+	margin-top: 7px;
+	border:none;
+	border-bottom: 3px solid #a18eb9;
 }
 input[class=box2]:hover{
-	font-family: 'Josefin Slab', serif;
-	width: 50%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: none;
-	border-bottom: 2px solid #a18eb9;
+	pointer-events:none;
+
 }
 .fileupload{
-	font-size:25px;
-	width:310;
-	display:none;
+	font-size:23px;
+	width:287px;
 	padding: 0px 0px;
 	border: 0px;
 	color: black;
 	border-bottom:none;
-	position: absolute;
-	left:248;
-	top:529;
-	height:50;
-	margin-top: -6px;
+	position:absolute;
+	margin-top: -74px;
+	margin-left: 230px;
+	height:50px;
 }
 .fileupload:hover{
 	pointer-events: none;
@@ -226,7 +291,7 @@ input[class=box2]:hover{
 	height: 65px;
 	padding: 12px 20px;
 	border-bottom: 2px solid #a18eb9;
-	margin-top: -14px;
+	margin-top: -5px;
 }
 input[type=submit] {
 	font-family: 'Josefin Slab', serif;
@@ -236,7 +301,7 @@ input[type=submit] {
 	color: white;
 	padding: 16px 32px;
 	text-decoration: none;
-	margin: 4px 2px;
+	margin: 20px 2px;
 	cursor: pointer;
 	border-radius: 15px;
 }
@@ -263,7 +328,7 @@ input[type=submit]:hover {
 	color: white;
 	padding: 16px 32px;
 	text-decoration: none;
-	margin: 4px 2px;
+	margin: 20px 2px;
 	cursor: pointer;
 	border-radius: 15px;
 }
@@ -274,4 +339,16 @@ input[type=submit]:hover {
 	text-align: center;
 	margin-top:-60px;
 }
+.fa-upload {
+	font-size: 30px;
+	position: absolute;
+	margin-top: 1px;
+	margin-left: -203px;
+	color: #a18eb9;
+}
+
+
+
+
+
 
