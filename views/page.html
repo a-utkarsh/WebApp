@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/stylesheets/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN -->
-		<script src="/javascripts/test.js"></script>
+		<script src="/javascripts/signup_validation.js"></script>
 		<link rel="shortcut icon" href="/images/favicon.ico">
 
 		<meta charset="UTF-8"> 
@@ -25,8 +25,8 @@
 					<div class="col-md-3">
 					</div>
 					<div class= "col-md-6 main">
-						<form class="form" id="signup" method="POST" action="/signup">
-							<h1 style=color:#fff> Signup Form </h1>
+						<form class="form" id="signup">
+							<h1 style=color:#a18eb9> Signup Form </h1>
 							<div class="name">
 								<input class="box" type="text" name="name" id="name" placeholder="Enter your name" required/><br>
 								<i class="fa fa-user icon"></i> 
@@ -52,7 +52,7 @@
 
 
 							</div>
-							<select class="sel" name="gender" required>
+							<select class="sel" name="gender" id="gender" required>
 								<option value="" disabled selected>Select Gender</option>
 								<option value="male">Male</option>
 								<option value="female">Female</option>

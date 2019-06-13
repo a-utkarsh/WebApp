@@ -13,14 +13,13 @@ exports.signup = function(req, res){
 		var gender   = req.body.gender;
 		db.query("SELECT COUNT(*) AS cnt FROM User WHERE email = ? ", email, function(err,data ){
 			if(err){
-				console.log("error")
+				console.log("error");
 			}
 			else{
 				if(data[0].cnt>0){
 					message1= "User already exixts";
-					res.render('page.html',{message:message1});
-					console.log(message1)
-					//	res.status (409).send('User already exixts')
+					console.log(message1);
+					res.status (409).send(message1);
 				}
 
 				/* Inserting query to database*/                                                                                                                                                            
@@ -32,13 +31,14 @@ exports.signup = function(req, res){
 
 							message2= "Incorrect Phone or DOB field";
 							res.render('page.html',{message:message2});
-							console.log(message2)
-					//		res.send('<script>window.alert("Incorrect Phone or DOB field")</script>')
+							console.log(message2);
+							res.status(409).send(message2);
+							//		res.send('<script>window.alert("Incorrect Phone or DOB field")</script>')
 						}
 						else{
 							console.log("1 record inserted into database");
-							res.render('success.html');
-							res.status(200)
+							res.redirect('/success');
+							res.status(200).send("success");
 						}
 
 					});
@@ -47,7 +47,6 @@ exports.signup = function(req, res){
 		});
 	}
 	else{
-		res.render('page.html')
+		res.render('page.html');
 	}
 };	
-
