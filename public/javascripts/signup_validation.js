@@ -28,7 +28,10 @@ $(document).ready(function(){
 			},
 			error:function(xhr){
 				if (xhr.status==409){
-					alert(xhr.responseText);
+					$("#error-msg").removeClass('hidden');
+					$("#error-msg").html(xhr.responseText);
+					$('#error-msg').delay(3000).fadeOut('slow');
+					window.setTimeout(function(){location.reload();},3000);
 				}
 			}
 		});

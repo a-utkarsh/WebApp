@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	$("#login").submit(function(e){
 		e.preventDefault();
 
@@ -20,7 +19,13 @@ $(document).ready(function(){
 			},
 			error:function(xhr){
 				if (xhr.status==409){
-					alert("Incorrect Username or Password");
+					$("#error-msg").removeClass('hidden');
+					$("#error-msg").html("<span>Incorrect Username or Password</span>");
+					$('#error-msg').delay(3000).fadeOut('slow');
+					window.setTimeout(function(){location.reload();},3000);
+
+
+
 				}
 			}
 		});

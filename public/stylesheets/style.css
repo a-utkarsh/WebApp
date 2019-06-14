@@ -391,3 +391,18 @@ input[type=submit]:hover {
 	margin-left			: -203px;
 	color				: #a18eb9;
 }
+
+#error-msg {
+
+    background			: #ffdce0;
+    font-size			: 22px;
+    border-radius		: 3px;
+    text-align			: center;
+    width				: 100%;
+    height				: 40px;
+    color				: #a41e53;
+}
+
+.hidden{
+	display				: none;
+}
