@@ -1,12 +1,12 @@
-var express = require('express');
+var express	= require('express');
 var router  = express.Router();
+var signup	= require('./signup');
 
-exports.success = function(req,res,next){
-	if (res.status == 200){
-		res.render('success.html')
-	}
-	else{
-		res.redirect('/signup')
-	}
+router.get('/',on_success);
 
+function on_success(req, res,next){
+	console.log("show success page");
+	res.render("success.html");
 }
+
+module.exports= router;

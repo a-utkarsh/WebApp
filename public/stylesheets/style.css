@@ -1,354 +1,393 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
 .homebtn{
-	margin-top:-420px;
-	margin-left:80px;
-}
-#homesgn{
-	width: 170px;
-	height: 55px;
-	font-size: 25px;
-	font-weight: bold;
-	padding:1px 5px;
-	font-family: 'Josefin Slab', serif;
-	border-radius: 20px;
-	text-align: center;
-	background-color: #0b1013	;
-	margin-top: 200px;
-	margin-left: 650px;
-	cursor: pointer;
-	transition: all 0.5s;
-	color:white;
-}
-#homesgn span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}
-#homesgn span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-#homesgn:hover span {
-	padding-right: 25px;
-}
-#homesgn:hover span:after {
-	opacity: 1;
-	right: 0;
-}
-#homesignin{
-	width: 170px;
-	height: 55px;
-	font-size: 25px;
-	font-weight: bold;
-	padding:1px 5px;
-	font-family: 'Josefin Slab', serif;
-	border-radius: 20px;
-	text-align: center;
-	background-color: #0b1013;
-	cursor: pointer;
-	transition: all 0.5s;
-	color:white;
-}
-#homesignin span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}
-#homesignin span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-#homesignin:hover span {
-	padding-right: 25px;
-}
-#homesignin:hover span:after {
-	opacity: 1;
-	right: 0;
-}
-#pic{
-	text-align: left;
-}
-.fa-user{
-	cursor: none;
-	margin-top: -60px;
-	font-size: 37px;
-	margin-left: 20px;
-	color:#a19eb9;
-	position: absolute;
-}
-#fa\ fa-envelope\ icon{
-	font-size: 30px;
-	margin-top:-60px;
-	margin-left: 20px;
-	color:#a18eb9;
-}
-#fa\ fa-key\ icon{
-	font-size: 30px;
-	margin-top:-60px;
-	margin-left: 20px;
-	color:#a18eb9;
-}
-.fa-envelope{
-	font-size: 30px;
-	margin-top:-60px;
-	margin-left: 20px;
-	color:#a18eb9;
-	position: absolute;
-}
-.fa-key{
-	font-size: 30px;
-	margin-top:-60px;
-	margin-left: 20px;
-	color:#a18eb9;
-	position: absolute;
-}
-.fa-mobile-phone{
-	font-size: 48px;
-	margin-top:-69px;
-	margin-left: 22px;
-	color:#a18eb9;
-	position: absolute;
-}
-input[type=date]{
-	margin-top:0;	
+	margin-top			:-420px;
+	margin-left			: 80px;
 }
 
+#homesgn{
+	width				: 170px;
+	height				: 55px;
+	font-size			: 25px;
+	font-weight			: bold;
+	padding				: 1px 5px;
+	font-family			: 'Josefin Slab', serif;
+	border-radius		: 20px;
+	text-align			: center;
+	background-color	: #0b1013	;
+	margin-top			: 200px;
+	margin-left			: 650px;
+	cursor				: pointer;
+	transition			: all 0.5s;
+	color				: white;
+}
+
+#homesgn span {
+	cursor				: pointer;
+	display				: inline-block;
+	position			: relative;
+	transition			: 0.5s;
+}
+
+#homesgn span:after {
+	content				: '\00bb';
+	position			: absolute;
+	opacity				: 0;
+	top					: 0;
+	right				: -20px;
+	transition			: 0.5s;
+}
+
+#homesgn:hover span {
+	padding-right		: 25px;
+}
+
+#homesgn:hover span:after {
+	opacity				: 1;
+	right				: 0;
+}
+
+#homesignin{
+	width				: 170px;
+	height				: 55px;
+	font-size			: 25px;
+	font-weight			: bold;
+	padding				: 1px 5px;
+	font-family			: 'Josefin Slab', serif;
+	border-radius		: 20px;
+	text-align			: center;
+	background-color	: #0b1013;
+	cursor				: pointer;
+	transition			: all 0.5s;
+	color				: white;
+}
+
+#homesignin span {
+	cursor				: pointer;
+	display				: inline-block;
+	position			: relative;
+	transition			: 0.5s;
+}
+
+#homesignin span:after {
+	content				: '\00bb';
+	position			: absolute;
+	opacity				: 0;
+	top					: 0;
+	right				: -20px;
+	transition			: 0.5s;
+}
+
+#homesignin:hover span {
+	padding-right		: 25px;
+}
+
+#homesignin:hover span:after {
+	opacity				: 1;
+	right				: 0;
+}
+
+#pic{
+	text-align			: left;
+}
+
+.fa-user{
+	cursor				: none;
+	margin-top			:-60px;
+	font-size			: 37px;
+	margin-left			: 20px;
+	color				:#a19eb9;
+	position			: absolute;
+}
+
+#fa\ fa-envelope\ icon{
+	font-size			: 30px;
+	margin-top			:-60px;
+	margin-left			: 20px;
+	color				:#a18eb9;
+}
+
+#fa\ fa-key\ icon{
+	font-size			: 30px;
+	margin-top			:-60px;
+	margin-left			: 20px;
+	color				:#a18eb9;
+}
+
+.fa-envelope{
+	font-size			: 30px;
+	margin-top			:-60px;
+	margin-left			: 20px;
+	color				:#a18eb9;
+	position			: absolute;
+}
+
+.fa-key{
+	font-size			: 30px;
+	margin-top			:-60px;
+	margin-left			: 20px;
+	color				:#a18eb9;
+	position			: absolute;
+}
+
+.fa-mobile-phone{
+	font-size			: 48px;
+	margin-top			:-69px;
+	margin-left			: 22px;
+	color				:#a18eb9;
+	position			: absolute;
+}
+
+input[type=date]{
+	margin-top			: 0;	
+}
 
 #logout{
-	width: 170px;
-	height: 55px;
-	font-size: 25px;
-	font-weight: bold;
-	padding:1px 5px;
-	font-family: 'Josefin Slab', serif;
-	border-radius: 20px;
-	text-align: center;
-	background-color: #0b1013;
-	cursor: pointer;
-	transition: all 0.5s;
-	color:white;
+	width				: 170px;
+	height				: 55px;
+	font-size			: 25px;
+	font-weight			: bold;
+	padding				: 1px 5px;
+	font-family			: 'Josefin Slab', serif;
+	border-radius		: 20px;
+	text-align			: center;
+	background-color	: #0b1013;
+	cursor				: pointer;
+	transition			: all 0.5s;
+	color				: white;
 }
+
 #logout span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
+	cursor				: pointer;
+	display				: inline-block;
+	position			: relative;
+	transition			: 0.5s;
 }
+
 #logout span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
+	content				: '\00bb';
+	position			: absolute;
+	opacity				: 0;
+	top					: 0;
+	right				: -20px;
+	transition			: 0.5s;
 }
+
 #logout:hover span {
-	padding-right: 25px;
+	padding-right		: 25px;
 }
+
 #logout:hover span:after {
-	opacity: 1;
-	right: 0;
+	opacity				: 1;
+	right				: 0;
 }
+
 #homemain{
-	padding:20px;
-	font-family: 'Josefin Slab', serif;
-	border : none;
+	padding				: 20px;
+	font-family			: 'Josefin Slab', serif;
+	border 				: none;
 }
+
 body{
 	background-image:url("/images/back.jpg");
 }
+
 #logout{
-	margin-top: 300px;
-	margin-left: 814px;
+	margin-top			: 300px;
+	margin-left			: 814px;
 }
+
 #homesignin{
-	margin-top:700px;
-	margin-left:10px;
+	margin-top			: 700px;
+	margin-left			: 10px;
 }
+
 .container{
-	margin-top:80px;
+	margin-top			: 80px;
 }
+
 h1{
 	position:static;
-	left: 200px;
-	top: 50px;
-	color:#d1e8ffa3;
-	font-family: 'Linotte',serif;
-	text-align:center;
-	font-size:60px;
+	left				: 200px;
+	top					: 50px;
+	color				:#d1e8ffa3;
+	font-family			: 'Linotte',serif;
+	text-align			: center;
+	font-size			: 60px;
 }
-.main{
-	padding:20px;
-	font-family: 'Josefin Slab', serif;
-	border : 3px solid #a18eb9;
-	border-radius: 15px;
-}
-.main h1{
-	font-size: 50px;
-	text-align:center;
-	font-family: 'Josefin Slab', serif;
-	color: #e2daec;
-	font-weight: bold;
-}
-input{
-	font-family: 'Josefin Slab', serif;
-	width: 100%;
-	font-size: 30px;
-	padding: 12px 20px;
-	margin: 8px 0;
-	border: none;
-	height: 65px;
-	border-bottom: 2px solid #a18eb9;
-	text-align:center;
-}
-.box2::placeholder{
-	color:black
-}
-input[class=box2]{
-	font-family: 'Josefin Slab', serif;
-	font-size:30px;
-	width:100%;
-	padding:12px 13px;
-	margin:8px 0;
-	border:none;
-	color:black;
-	background:white;
-	cursor:pointer;
-	height: 63px;
-	margin-left: 1px;
-	margin-top:1px;
-}
-.fa-calendar{
-	font-size: 30px;
-	margin-top:-59px;
-	margin-left: 230px;
-	color:#a18eb9;
-	position: absolute;
-}
-.date:hover{
-	pointer-events: none;
-}
-input[type=date]:hover{
-	margin: 0px;
-}
-select[class=sel]{
-	font-family: 'Josefin Slab', serif;
-	font-size:30px;
-	width:41%;
-	color:#000;
-	height: 65px;
-	padding:12px 20px;
-	border:none;
-	border-bottom: 2px solid #a18eb9;
-	position:absolute;
-	margin-top:-65px;
-	margin-left:294px;
-	background-color: white;
 
+.main{
+	padding				: 20px;
+	font-family			: 'Josefin Slab', serif;
+	border 				: 3px solid #a18eb9;
+	border-radius		: 15px;
+}
+
+.main h1{
+	font-size			: 50px;
+	text-align			: center;
+	font-family			: 'Josefin Slab', serif;
+	color				: #e2daec;
+	font-weight			: bold;
+}
+
+input{
+	font-family			: 'Josefin Slab', serif;
+	width				: 100%;
+	font-size			: 30px;
+	padding				: 12px 20px;
+	margin				: 8px 0;
+	border				: none;
+	height				: 65px;
+	border-bottom		: 2px solid #a18eb9;
+	text-align			: center;
+}
+
+.box2::placeholder{
+	color				: black
+}
+
+input[class=box2]{
+	font-family			: 'Josefin Slab', serif;
+	font-size			: 30px;
+	width				: 100%;
+	padding				: 12px 13px;
+	margin				: 8px 0;
+	border				: none;
+	color				: black;
+	background			: white;
+	cursor				: pointer;
+	height				: 63px;
+	margin-left			: 1px;
+	margin-top			: 1px;
+}
+
+.fa-calendar{
+	font-size			: 30px;
+	margin-top			:-59px;
+	margin-left			: 230px;
+	color				:#a18eb9;
+	position			: absolute;
+}
+
+.date:hover{
+	pointer-events		: none;
+}
+
+input[type=date]:hover{
+	margin				: 0px;
+}
+
+select[class=sel]{
+	font-family			: 'Josefin Slab', serif;
+	font-size			: 30px;
+	width				: 41%;
+	color				: #000;
+	height				: 65px;
+	padding				: 12px 20px;
+	border				: none;
+	border-bottom		: 2px solid #a18eb9;
+	position			: absolute;
+	margin-top			:-65px;
+	margin-left			: 294px;
+	background-color	: white;
 }
 
 .date{
-	background: white;
-	width: 270px;
-	height:65px;
-	margin-top: 7px;
-	border:none;
-	border-bottom: 3px solid #a18eb9;
+	background			: white;
+	width				: 270px;
+	height				: 65px;
+	margin-top			: 7px;
+	border				: none;
+	border-bottom		: 3px solid #a18eb9;
 }
-input[class=box2]:hover{
-	pointer-events:none;
 
+input[class=box2]: hover{
+	pointer-events		: none;
 }
+
 .fileupload{
-	font-size:23px;
-	width:287px;
-	padding: 0px 0px;
-	border: 0px;
-	color: black;
-	border-bottom:none;
-	position:absolute;
-	margin-top: -74px;
-	margin-left: 230px;
-	height:50px;
+	font-size			: 23px;
+	width				: 287px;
+	padding				: 0px 0px;
+	border				: 0px;
+	color				: black;
+	border-bottom		: none;
+	position			: absolute;
+	margin-top			: -74px;
+	margin-left			: 230px;
+	height				:50px;
 }
+
 .fileupload:hover{
-	pointer-events: none;
+	pointer-events		: none;
 }
+
 .profile{
-	font-size: 30px;
-	color:black;
-	background: white; 
-	height: 65px;
-	padding: 12px 20px;
-	border-bottom: 2px solid #a18eb9;
-	margin-top: -5px;
+	font-size			: 30px;
+	color				: black;
+	background			: white; 
+	height				: 65px;
+	padding				: 12px 20px;
+	border-bottom		: 2px solid #a18eb9;
+	margin-top			: -5px;
 }
+
 input[type=submit] {
-	font-family: 'Josefin Slab', serif;
-	width: 100%;
-	background-color: #77648f;
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-decoration: none;
-	margin: 20px 2px;
-	cursor: pointer;
-	border-radius: 15px;
+	font-family			: 'Josefin Slab', serif;
+	width				: 100%;
+	background-color	: #77648f;
+	border				: none;
+	color				: white;
+	padding				: 16px 32px;
+	text-decoration		: none;
+	margin				: 20px 2px;
+	cursor				: pointer;
+	border-radius		: 15px;
 }
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
 	outline: none;
 }
+
 input:hover {
-	font-family: 'Josefin Slab', serif;
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: none;
-	border-bottom: 2px solid #a18eb9;
+	font-family			: 'Josefin Slab', serif;
+	width				: 100%;
+	padding				: 12px 20px;
+	margin				: 8px 0;
+	box-sizing			: border-box;
+	border				: none;
+	border-bottom		: 2px solid #a18eb9;
 }
+
 input[type=submit]:hover {
-	font-family: 'Josefin Slab', serif;
-	width: 100%;
-	background-color: #a18eb9;
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-decoration: none;
-	margin: 20px 2px;
-	cursor: pointer;
-	border-radius: 15px;
+	font-family			: 'Josefin Slab', serif;
+	width				: 100%;
+	background-color	: #a18eb9;
+	border				: none;
+	color				: white;
+	padding				: 16px 32px;
+	text-decoration		: none;
+	margin				: 20px 2px;
+	cursor				: pointer;
+	border-radius		: 15px;
 }
+
 .copy{
-	color: white;
-	font-family: 'Josefin Slab', serif;
-	font-size: 20px;
-	text-align: center;
-	margin-top:-60px;
+	color				: white;
+	font-family			: 'Josefin Slab', serif;
+	font-size			: 20px;
+	text-align			: center;
+	margin-top			:-60px;
 }
+
 .fa-upload {
-	font-size: 30px;
-	position: absolute;
-	margin-top: 1px;
-	margin-left: -203px;
-	color: #a18eb9;
+	font-size			: 30px;
+	position			: absolute;
+	margin-top			: 1px;
+	margin-left			: -203px;
+	color				: #a18eb9;
 }
-
-
-
-
-
-

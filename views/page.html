@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<title> SignUp Form </title>
 
 		<link rel="stylesheet" href="/stylesheets/bootstrap.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/stylesheets/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN -->
-		<script src="/javascripts/signup_validation.js"></script>
 		<link rel="shortcut icon" href="/images/favicon.ico">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- load jquery via CDN -->
+		<script src="/javascripts/signup_validation.js"></script>
 		<meta charset="UTF-8"> 
 	</head>
+
 	<body>
 		<br>
 		<br>
@@ -27,40 +29,41 @@
 					<div class= "col-md-6 main">
 						<form class="form" id="signup">
 							<h1 style=color:#a18eb9> Signup Form </h1>
+
 							<div class="name">
 								<input class="box" type="text" name="name" id="name" placeholder="Enter your name" required/><br>
 								<i class="fa fa-user icon"></i> 
 							</div>
-							<div>
 
+							<div>
 								<input class="box" type="email" name="email" id="email" placeholder="Enter your E-Mail" required/><br>
 								<i class="fa fa-envelope icon"> </i> 
 							</div>
+
 							<div>	
 								<input class="box" type="password" name="password" id="password" placeholder="Enter your password" required/><br>
 								<i class="fa fa-key icon"> </i> 
 							</div>
+
 							<div>
 								<input class="box" type="text" name="phone" id="phone" placeholder="Enter your Mobile Number" required/><br>
 								<i class="fa fa-mobile-phone"></i>
 							</div>
 
 							<div class="date">
-
 								<input class="box" type="date" name="bday" id="bday" required/><br>
 								<i class="fa fa-calendar" aria-hidden="true"></i>
-
-
 							</div>
+
 							<select class="sel" name="gender" id="gender" required>
 								<option value="" disabled selected>Select Gender</option>
 								<option value="male">Male</option>
 								<option value="female">Female</option>
 							</select>
+
 							<br>
 							<p class="profile"> &nbsp;&nbsp;&nbsp;Upload Photo
 							<i class="fa fa-upload" aria-hidden="true"></i>
-
 							</p>
 							<input class="fileupload" type="file" name="pic" id="pic" accept="image/*"/><br>
 							<input type="submit" id= "submitDetails" name="submitDetails" value= " Submit" /><br>

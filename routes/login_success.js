@@ -1,7 +1,9 @@
 var express = require('express');
 var router  = express.Router();
 var login   = require('./login');
-exports.dashboard = function(req,res,next){
+
+
+exports.dashboard= function(req,res,next){
 	var user  = req.session.user;
 	var userId = req.session.userId;
 	console.log("User Id="+userId);
@@ -12,18 +14,17 @@ exports.dashboard = function(req,res,next){
 	var sql="SELECT * FROM `User` WHERE `id`='"+userId+"'";
 	db.query(sql, function(err,results){
 		if (err){
-			console.log("error in fetching data")
+			console.log("error in fetching data");
 		}
 		else{
 			console.log(results);
-			res.render('login_success.html',{user:user})
+			res.render('login_success.html',{user:user});
 		}
-
 	});
 };
 
-exports.logout = function(req,res){
+exports.logout= function(req,res){
 	req.session.destroy(function(err){
-		res.redirect('/login');
-	})
+		return	res.redirect('/login');
+	});
 };
