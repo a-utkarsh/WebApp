@@ -45,8 +45,8 @@ app.use('/', home);
 app.use('/signup',signup);
 app.use('/success',success);
 app.use ('/login', login);
-app.get('/login_success', login_success.dashboard);//call for dashboard page after login
 app.use('/logout',login_success.logout);
+app.get('/login_success', login_success.dashboard);//call for dashboard page after login
 
 /* Creating Server */
 var server   = app.listen(8081,function(){

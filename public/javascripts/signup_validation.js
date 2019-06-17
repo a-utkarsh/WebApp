@@ -30,8 +30,8 @@ $(document).ready(function(){
 				if (xhr.status==409){
 					$("#error-msg").removeClass('hidden');
 					$("#error-msg").html(xhr.responseText);
-					$('#error-msg').delay(3000).fadeOut('slow');
-					window.setTimeout(function(){location.reload();},3000);
+					$('#error-msg').delay(4000).fadeOut('slow');
+					window.setTimeout(function(){location.reload();},5000);
 				}
 			}
 		});
