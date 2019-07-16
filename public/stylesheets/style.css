@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 
-.homebtn{
-	margin-top			:-420px;
-	margin-left			: 80px;
+.homebtn {
+	margin-top  :-420px;
+	margin-left : 80px;
 }
 
-#homesgn{
-	width				: 170px;
-	height				: 55px;
-	font-size			: 25px;
-	font-weight			: bold;
-	padding				: 1px 5px;
-	font-family			: 'Josefin Slab', serif;
-	border-radius		: 20px;
-	text-align			: center;
-	background-color	: #0b1013	;
-	margin-top			: 200px;
-	margin-left			: 650px;
-	cursor				: pointer;
-	transition			: all 0.5s;
-	color				: white;
+#homesgn {
+	width            : 170px;
+	height           : 55px;
+	font-size        : 25px;
+	font-weight      : bold;
+	padding          : 1px 5px;
+	font-family      : 'Josefin Slab', serif;
+	border-radius    : 20px;
+	text-align       : center;
+	background-color : #0b1013	;
+	margin-top       : 200px;
+	margin-left      : 650px;
+	cursor           : pointer;
+	transition       : all 0.5s;
+	color            : white;
 }
 
 #homesgn span {
-	cursor				: pointer;
-	display				: inline-block;
-	position			: relative;
-	transition			: 0.5s;
+	cursor     : pointer;
+	display	   : inline-block;
+	position   : relative;
+	transition : 0.5s;
 }
 
-#homesgn span:after {
+#homesgn span : after {
 	content				: '\00bb';
 	position			: absolute;
 	opacity				: 0;
@@ -143,8 +143,8 @@ input[type=date]{
 }
 
 #logout{
-	width				: 170px;
-	height				: 55px;
+	width         : 170px;
+	height        : 55px;
 	font-size			: 25px;
 	font-weight			: bold;
 	padding				: 1px 5px;
@@ -385,24 +385,24 @@ input[type=submit]:hover {
 }
 
 .fa-upload {
-	font-size			: 30px;
-	position			: absolute;
-	margin-top			: 1px;
-	margin-left			: -203px;
-	color				: #a18eb9;
+	font-size           : 30px;
+	position            : absolute;
+	margin-top          : 1px;
+	margin-left         : -203px;
+	color               : #a18eb9;
 }
 
 #error-msg {
 
-    background			: #ffdce0;
-    font-size			: 22px;
-    border-radius		: 3px;
-    text-align			: center;
-    width				: 100%;
-    height				: 40px;
-    color				: #a41e53;
+    background          : #ffdce0;
+    font-size           : 22px;
+    border-radius       : 3px;
+    text-align          : center;
+    width               : 100%;
+    height              : 40px;
+    color               : #a41e53;
 }
 
-.hidden{
-	display				: none;
+.hidden {
+	display             : none;
 }
